@@ -1,6 +1,15 @@
 # DxMI
 
-This repository reproduces the **DxMI** (Diffusion by Maximum Entropy Inverse RL) algorithm from [(Yoon et al., 2024)](https://arxiv.org/abs/2407.00626$0). Instead of the original U-Net, we use simple MLPs for both the diffusion (policy) network and the value (energy) network to facilitate fast ablations.
+This repository reproduces the **DxMI** (Diffusion by Maximum Entropy Inverse RL) algorithm from [(Yoon et al., 2024)](https://arxiv.org/abs/2407.00626$0). 
+
+# CIFAR-10 Experiments
+
+We chose to reproduce the the experiments from the paper on the CIFAR-10 dataset to determine the paper's reproducability. Because a full image generation codebase is quite hefty, we chose to only reimplement the file (cifar10/models/DxMI/trainer.py), which follows the key reinforcement learning DxMI algorithm from the paper. 
+
+
+# MNIST Experiments
+
+Instead of the original U-Net, we use simple MLPs for both the diffusion (policy) network and the value (energy) network to facilitate fast ablations.
 
 
 - **Goal**: Fine-tune a pretrained diffusion model via maximum-entropy inverse RL.
