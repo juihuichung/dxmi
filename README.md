@@ -9,7 +9,7 @@ We chose to reproduce the the experiments from the paper on the CIFAR-10 dataset
 
 # MNIST Experiments
 
-Instead of the original U-Net, we use simple MLPs for both the diffusion (policy) network and the value (energy) network to facilitate fast ablations.
+Instead of the original U-Net, we use simple MLPs for both the diffusion (policy) network and the value (energy) network to facilitate fast ablations in (diffusion_by_maximum_entropy_irl.ipynb).
 
 
 - **Goal**: Fine-tune a pretrained diffusion model via maximum-entropy inverse RL.
